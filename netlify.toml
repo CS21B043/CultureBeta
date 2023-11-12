@@ -1,0 +1,10 @@
+[build]
+  base = "/"
+  publish = "client"  # Adjust to your actual frontend public directory
+  functions = "api/functions"
+  command = "npm start"  # Use "npm start" if that's how you start your server
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
